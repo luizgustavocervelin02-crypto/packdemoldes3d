@@ -10,57 +10,71 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
+    <!-- Header Section -->
+    <section class="top-nav">
+        <div class="container text-center">
+            <div class="natal-pill">🎅 NATAL 3D! Aproveite os descontos especiais de dezembro.</div>
+            <div class="rating-pill">⭐ 4,98 (5286 AVALIAÇÕES)</div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
     <header class="hero">
         <div class="container hero-container">
-            <p class="hero-tagline">🚀 TRANSFORMANDO VIDAS ATRAVÉS DA IMPRESSÃO 3D</p>
             <h1>TRANSFORME SUA IMPRESSORA 3D EM UMA <span class="highlight">MÁQUINA DE LUCRO</span> COM +DE 90 MIL
                 PROJETOS!</h1>
             <p class="hero-subtitle">Com esse PACK você tem acesso imediato a milhares de modelos prontos para lucrar!
                 <span class="white-text">Não precisa criar nada do zero, basta baixar e imprimir.</span></p>
 
-            <div class="cta-wrapper">
-                <a href="#checkout" class="btn-primary">BAIXAR PACOTE COM DESCONTO!</a>
-                <div class="rating-strip">
-                    <span class="stars">⭐⭐⭐⭐⭐</span>
-                    <span class="rating-text">4.98/5 AVALIAÇÕES (5286 AVALIAÇÕES)</span>
-                </div>
+            <ul class="hero-checklist">
+                <li><span class="icon">⚡</span> Não precisa criar nada do zero, basta baixar e imprimir</li>
+                <li><span class="icon">⚡</span> Arquivos testados, otimizados e organizados por nichos</li>
+                <li><span class="icon">⚡</span> Modelos que já vendem na Shopee e OLX</li>
+                <li><span class="icon">⚡</span> Acesso imediato</li>
+            </ul>
+
+            <div class="cta-area">
+                <a href="#checkout" class="btn-primary pulse">BAIXAR PACOTE COM DESCONTO! <span
+                        class="arrow">→</span></a>
+                <p class="cta-sub">Garantia Incondicional de 14 Dias</p>
             </div>
 
-            <div class="hero-image-vsl">
-                <img src="assets/hero_3d.png" alt="Impressão 3D Profissional" class="main-visual">
+            <div class="vsl-mock">
+                <!-- Placing a high-quality mockup image -->
+                <img src="assets/hero_3d.png" alt="Acervo Oculto 3D Mockup" class="hero-img">
             </div>
         </div>
     </header>
 
-    <section class="benefits">
+    <!-- Benefits Section -->
+    <section class="benefits bg-dark">
         <div class="container">
-            <div class="benefit-header">
-                <h2>COM NOSSO MATERIAL <span class="highlight">VOCÊ TERÁ:</span></h2>
-            </div>
+            <h2 class="section-title">COM NOSSO MATERIAL <span class="highlight">VOCÊ TERÁ:</span></h2>
 
             <div class="benefits-grid">
                 <div class="benefit-card">
-                    <div class="icon-circle">💡</div>
+                    <div class="icon-box">💡</div>
                     <h3>IDEIAS INFINITAS PARA VENDER</h3>
                     <p>Tenha acesso a uma biblioteca com milhares de temas e categorias.</p>
                 </div>
                 <div class="benefit-card">
-                    <div class="icon-circle">🕒</div>
+                    <div class="icon-box">🕒</div>
                     <h3>MAIS TEMPO LIVRE</h3>
                     <p>Tudo organizado e separado por pastas, pronto para imprimir.</p>
                 </div>
                 <div class="benefit-card">
-                    <div class="icon-circle">📈</div>
+                    <div class="icon-box">📈</div>
                     <h3>LUCROS PREVISÍVEIS</h3>
                     <p>Modelos testados e aprovados que vendem com frequência e garantem retorno constante.</p>
                 </div>
                 <div class="benefit-card">
-                    <div class="icon-circle">🔒</div>
+                    <div class="icon-box">🛡️</div>
                     <h3>ACESSO RÁPIDO E SEGURO</h3>
                     <p>Baixe tudo de forma simples e use no computador, celular ou HD externo.</p>
                 </div>
@@ -68,22 +82,28 @@
         </div>
     </section>
 
+    <!-- Models Showcase -->
     <section class="showcase">
         <div class="container">
-            <h2>VEJA OS MODELOS QUE <span class="highlight">VOCÊ IRÁ RECEBER:</span></h2>
-            <div class="model-carousel">
-                <div class="model-item">
-                    <img src="assets/animes.png" alt="Modelos de Animes">
-                    <div class="model-label">Animes</div>
+            <h2 class="section-title">VEJA OS MODELOS QUE <span class="highlight">VOCÊ IRÁ RECEBER:</span></h2>
+            <div class="carousel-container">
+                <div class="carousel-item">
+                    <div class="img-wrap">
+                        <img src="assets/animes.png" alt="Animes">
+                        <div class="nav-btn left">‹</div>
+                        <div class="nav-btn right">›</div>
+                    </div>
+                    <div class="item-footer">Animes</div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Compare Section -->
     <section class="compare">
         <div class="container">
-            <div class="compare-box bad">
-                <h3 class="bad-title">SEM O NOSSO MEGA PACK:</h3>
+            <div class="compare-card bad">
+                <h3>SEM O NOSSO MEGA PACK:</h3>
                 <ul>
                     <li>❌ Perde tempo caçando arquivos em sites e grupos</li>
                     <li>❌ Encontra modelos quebrados, incompletos ou incompatíveis</li>
@@ -92,8 +112,8 @@
                     <li>❌ Corre risco com arquivos maliciosos</li>
                 </ul>
             </div>
-            <div class="compare-box good">
-                <h3 class="good-title">COM O NOSSO MEGA PACK:</h3>
+            <div class="compare-card good">
+                <h3>COM O NOSSO MEGA PACK:</h3>
                 <ul>
                     <li>✅ Acesso instantâneo a mais de 90 mil modelos organizados</li>
                     <li>✅ Arquivos testados, compatíveis e prontos para uso</li>
@@ -105,114 +125,149 @@
         </div>
     </section>
 
-    <section class="features-list">
+    <!-- Facilities -->
+    <section class="facilities bg-dark">
         <div class="container">
-            <h2>FACILIDADES QUE SÓ <span class="highlight">ESSE PACK OFERECE!</span></h2>
+            <h2 class="section-title">FACILIDADES QUE SÓ <span class="highlight">ESSE PACK OFERECE!</span></h2>
 
-            <div class="feature-item">
-                <span class="feature-icon">⌚</span>
-                <div class="feature-text">
-                    <h4>MAIS TEMPO PARA LUCRAR</h4>
-                    <p>Pare de perder horas procurando arquivos e use esse tempo para imprimir e vender mais.</p>
+            <div class="fac-list">
+                <div class="fac-item">
+                    <span class="fac-icon">⌚</span>
+                    <div class="fac-content">
+                        <h4>MAIS TEMPO PARA LUCRAR</h4>
+                        <p>Pare de perder horas procurando arquivos e use esse tempo para imprimir e vender mais.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="feature-item">
-                <span class="feature-icon">💰</span>
-                <div class="feature-text">
-                    <h4>UM NEGÓCIO PRONTO</h4>
-                    <p>Com milhares de modelos disponíveis, você começa a lucrar rapidamente, mesmo com pouca
-                        experiência.</p>
+                <div class="fac-item">
+                    <span class="fac-icon">💰</span>
+                    <div class="fac-content">
+                        <h4>UM NEGÓCIO PRONTO</h4>
+                        <p>Com milhares de modelos disponíveis, você começa a lucrar rapidamente, mesmo com pouca
+                            experiência.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="feature-item">
-                <span class="feature-icon">🧠</span>
-                <div class="feature-text">
-                    <h4>LIBERDADE PARA PRODUZIR</h4>
-                    <p>Imprima o que quiser, quando quiser, e tenha liberdade total pra gerenciar suas vendas.</p>
+                <div class="fac-item">
+                    <span class="fac-icon">🧠</span>
+                    <div class="fac-content">
+                        <h4>LIBERDADE PARA PRODUZIR</h4>
+                        <p>Imprima o que quiser, quando quiser, e tenha liberdade total pra gerenciar suas vendas.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="feature-item">
-                <span class="feature-icon">🔥</span>
-                <div class="feature-text">
-                    <h4>VENDAS CONSISTENTES</h4>
-                    <p>Use modelos com alta demanda e conquiste um fluxo constante de pedidos e faturamento.</p>
+                <div class="fac-item">
+                    <span class="fac-icon">🔥</span>
+                    <div class="fac-content">
+                        <h4>VENDAS CONSISTENTES</h4>
+                        <p>Use modelos com alta demanda e conquiste um fluxo constante de pedidos e faturamento.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Bonuses Section -->
     <section class="bonuses">
         <div class="container">
-            <h2>COMPRE HOJE E GANHE 8 BÔNUS EXCLUSIVOS 🎁</h2>
+            <h2 class="section-title">COMPRE HOJE E GANHE 8 BÔNUS EXCLUSIVOS 🎁</h2>
 
             <!-- Bonus 1 -->
-            <div class="bonus-card">
-                <div class="bonus-tag">BÔNUS 1:</div>
-                <div class="bonus-content">
-                    <h4>PACK DE VEÍCULOS 3D PROFISSIONAIS</h4>
+            <div class="bonus-card-faithful">
+                <div class="bonus-ribbon">BÔNUS 1:</div>
+                <div class="bonus-inner">
+                    <h3>PACK DE VEÍCULOS 3D PROFISSIONAIS</h3>
                     <img src="assets/veiculos.png" alt="Veículos 3D">
                     <p>Carros, motos, caminhões e muito mais prontos para impressão 3D. Crie miniaturas detalhadas,
                         peças colecionáveis ou personalize modelos para revenda.</p>
-                    <div class="bonus-price">
-                        <span class="old-price">De R$ 29,90</span>
-                        <span class="free-text">VAI SAIR DE GRAÇA</span>
+                    <div class="bonus-price-box">
+                        <span class="strikethrough">De R$ 29,90</span>
+                        <span class="free-badge">VAI SAIR DE GRAÇA</span>
                     </div>
                 </div>
             </div>
 
             <!-- Bonus 2 -->
-            <div class="bonus-card">
-                <div class="bonus-tag">BÔNUS 2:</div>
-                <div class="bonus-content">
-                    <h4>COLEÇÃO HERÓIS DA MARVEL</h4>
-                    <img src="assets/marvel.png" alt="Heróis Marvel">
+            <div class="bonus-card-faithful">
+                <div class="bonus-ribbon">BÔNUS 2:</div>
+                <div class="bonus-inner">
+                    <h3>COLEÇÃO HERÓIS DA MARVEL</h3>
+                    <img src="assets/marvel.png" alt="Marvel Heroes">
                     <p>Receba uma coleção incrível de modelos STL de heróis lendários da Marvel: personagens, símbolos e
                         acessórios que fazem sucesso entre colecionadores e fãs.</p>
-                    <div class="bonus-price">
-                        <span class="old-price">De R$ 39,90</span>
-                        <span class="free-text">VAI SAIR DE GRAÇA</span>
+                    <div class="bonus-price-box">
+                        <span class="strikethrough">De R$ 39,90</span>
+                        <span class="free-badge">VAI SAIR DE GRAÇA</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Additional bonuses would follow the same pattern -->
+            <p class="bonus-final-note">Esses bônus valem <span class="white">R$ 479,10</span> e somente hoje você
+                recebe eles <span class="green-glow">GRATUITAMENTE!</span></p>
         </div>
     </section>
 
-    <section id="checkout" class="pricing">
-        <div class="container pricing-grid">
-            <div class="pricing-card main">
-                <div class="card-header">
-                    <h3>PACOTE PREMIUM</h3>
-                    <p>Acesso vitalício + Atualizações</p>
-                </div>
-                <div class="card-body">
-                    <div class="price">
+    <!-- Testimonials -->
+    <section class="testimonials bg-dark">
+        <div class="container">
+            <div class="dep-pill">DEPOIMENTOS REAIS</div>
+            <h2 class="section-title">VEJA O QUE OS NOSSOS <span class="highlight">CLIENTES ESTÃO DIZENDO:</span></h2>
+            <!-- Testimonials contents -->
+        </div>
+    </section>
+
+    <!-- Offer / Packages -->
+    <section id="checkout" class="packages">
+        <div class="container">
+            <h2 class="section-title">ESCOLHA SEU PACOTE</h2>
+
+            <div class="package-grid">
+                <!-- We stick to one main high-converting card for 100% focus -->
+                <div class="package-card premium">
+                    <div class="pkg-header">PACOTE PREMIUM</div>
+                    <div class="pkg-price">
                         <span class="currency">R$</span>
-                        <span class="amount">27,90</span>
+                        <span class="value">27,90</span>
                     </div>
-                    <ul class="features">
-                        <li>✅ Acesso a +90 mil arquivos</li>
-                        <li>✅ Todos os 8 Bônus</li>
-                        <li>✅ Suporte 24h</li>
+                    <ul class="pkg-features">
+                        <li>✅ +90.000 arquivos STL</li>
+                        <li>✅ Todos os 8 Bônus Premium</li>
+                        <li>✅ 🎁 BÔNUS: Coleção de Natal</li>
+                        <li>✅ Acesso Vitalício</li>
+                        <li>✅ Suporte no WhatsApp</li>
                     </ul>
-                    <a href="#" class="btn-primary">EU QUERO O ACESSO PREMIUM</a>
+                    <a href="#" class="btn-primary">EU QUERO ESSA SUPER OFERTA!</a>
+                    <p class="secure-checkout">🔒 Compra 100% Segura e Acesso Instantâneo</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- FAQ -->
     <section class="faq">
         <div class="container">
-            <h2>PERGUNTAS FREQUENTES</h2>
-            <div class="faq-accordion">
-                <div class="faq-item">
-                    <div class="faq-question">Preciso baixar todos os arquivos de uma vez?</div>
-                    <div class="faq-answer">Não, o acesso é vitalício e você pode baixar conforme a necessidade.</div>
+            <div class="faq-pill">FAQ</div>
+            <h2 class="section-title">PERGUNTAS <span class="highlight">FREQUENTES</span></h2>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">Esses arquivos funcionam na minha impressora 3D? <span
+                            class="arrow">⌄</span></button>
+                    <div class="accordion-content">Sim! Os arquivos STL são universais e compatíveis com todas as
+                        impressoras 3D FDM e Resina do mercado.</div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Como eu acesso os arquivos depois de pagar? <span
+                            class="arrow">⌄</span></button>
+                    <div class="accordion-content">O acesso é enviado automaticamente para o seu e-mail logo após a
+                        confirmação do pagamento.</div>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Acervo Oculto 3D. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
